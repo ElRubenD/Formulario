@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EstiloF.css" type="text/css">
+    <title>Evento Cool</title>
+</head>
+<body>
+    <h1>Inscripcion para Evento Cool</h1>
+    <br><br>
+    <form action="/action_page.php" target="_blank">
+            <fieldset>
+            <legend><b>Datos Personales</b></legend>
+            <br>
+            <label for="Apellido">Apellido :</label>
+            <input type="text" id="Apellido" required>
+            <label for="Nombre">Nombre :</label>
+            <input type="text" id="Nommbre" required>
+            <br><br>
+            <label for="DNI">DNI :</label>
+            <input type="text" id="DNI" maxlength="8" pattern="[0-9]" required>
+            <label for="Fecha">Fecha de nacimiento :</label>
+            <input type="date" id="Fecha" required>
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Genero</b></legend>
+            <br>
+            <input type="radio" name="Genero" id="Hombre">
+            <label for="Hombre">Hombre</label>
+            <br>
+            <input type="radio" name="Genero" id="Mujer">
+            <label for="Mujer">Mujer</label>
+            <br>
+            <input type="radio" name="Genero" id="Otro">
+            <label for="Otro">Otro</label>
+            <br><br>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend><b>Direccion</b></legend>
+            <br>
+            <label for="Calle">Calle</label>
+            <input type="text" id="Calle" required>
+            <label for="Numero">Numero</label>
+            <input type="text" id="Numero" pattern="[0-9]" required>
+            <br><br>
+            <label for="CodPos">Cogido Postal</label>
+            <input type="text" id="CodPos" maxlength="4" pattern="[0-9]" required>
+            <br><br>
+            <label for="Prov">Provincia</label>
+            <select name="Provincia" class="Boton" id="Prov" required>
+                <option class="Boton" id="CABA">Ciudad de Buenos Aires</option>
+                <option class="Boton" id="BA">Buenos Aires</option>
+                <option class="Boton" id="CCA">Catamarca</option>
+                <option class="Boton" id="CHA">Chaco</option>
+                <option class="Boton" id="CHB">Chubut</option>
+                <option class="Boton" id="CBA">Córdoba</option>
+                <option class="Boton" id="CTES">Corrientes</option>
+                <option class="Boton" id="ER">Entre Ríos</option>
+                <option class="Boton" id="FSA">Formosa</option>
+                <option class="Boton" id="JU">Jujuy</option>
+                <option class="Boton" id="LP">La Pampa</option>
+                <option class="Boton" id="LR">La Rioja</option>
+                <option class="Boton" id="MDZ">Mendoza</option>
+                <option class="Boton" id="MNES">Misiones</option>
+                <option class="Boton" id="NQN">Neuquén</option>
+                <option class="Boton" id="RN">Río Negro</option>
+                <option class="Boton" id="SA">Salta</option>
+                <option class="Boton" id="SJ">San Juan</option>
+                <option class="Boton" id="SL">San Luis</option>
+                <option class="Boton" id="SCZ">Santa Cruz</option>
+                <option class="Boton" id="SF">Santa Fe</option>
+                <option class="Boton" id="SDE">Santiago del Estero</option>
+                <option class="Boton" id="TDF">Tierra del Fuego</option>
+                <option class="Boton" id="TU">Tucumán</option>
+            </select>
+            <label for="City">Ciudad</label>
+            <select name="Ciudad" class="Boton" id="City" required>
+                <option class="Boton" id="Capital">Capital</option>
+                <option class="Boton" id="BellaVista">Bella Vista</option>
+                <option class="Boton" id="BerónDeAstrada">Berón de Astrada</option>
+                <option class="Boton" id="Concepción">Concepción</option>
+                <option class="Boton" id="CuruzúCuatiá">Curuzú Cuatiá</option>
+                <option class="Boton" id="Empedrado">Empedrado</option>
+                <option class="Boton" id="Esquina">Esquina</option>
+                <option class="Boton" id="GeneralAlvear">General Alvear</option>
+                <option class="Boton" id="GeneralPaz">General Paz</option>
+                <option class="Boton" id="Goya">Goya</option>
+                <option class="Boton" id="Itatí">Itatí</option>
+                <option class="Boton" id="Ituzaingó">Ituzaingó</option>
+                <option class="Boton" id="Lavalle">Lavalle</option>
+                <option class="Boton" id="Mburucuyá">Mburucuyá</option>
+                <option class="Boton" id="Mercedes">Mercedes</option>
+                <option class="Boton" id="MonteCaseros">Monte Caseros</option>
+                <option class="Boton" id="PasoDeLosLibres">Paso de los Libres</option>
+                <option class="Boton" id="Saladas">Saladas</option>
+                <option class="Boton" id="SanCosme">San Cosme</option>
+                <option class="Boton" id="SanLuisDelPalmar">San Luis del Palmar</option>
+                <option class="Boton" id="SanMartín">San Martín</option>
+                <option class="Boton" id="SanMiguel">San Miguel</option>
+                <option class="Boton" id="SanRoque">San Roque</option>
+                <option class="Boton" id="SantoTomé">Santo Tomé</option>
+                <option class="Boton" id="Sauce">Sauce</option>
+            </select>
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Contacto</b></legend>
+            <br>
+            <label for="Tel">Telefono</label>
+            <input type="text" maxlength="10" pattern="[0-9]" id="Tel" placeholder="Ejemplo: 3794222222" required>
+            <br><br>
+            <label for="Correo">Email</label>
+            <input type="email" id="Correo" placeholder="Ejemplo@otro.com" required>
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>¿Que esperas de este Evento?</b></legend>
+            <br>
+            <textarea name="Comentario" id="" cols="50" rows="10" placeholder="Contanos"></textarea>
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                <label for="Aceptar"><b>Aceptar los Terminos y condiciones del Evento</b></label>
+                <input type="checkbox" name="Aceptar Terminos y condiciones" id="Aceptar" required>
+            </legend>
+            <br>
+            <input type="submit" class="Boton" value="Vamos con todo">
+            <input type="reset" class="Boton" value="Borrar Campos">
+            <br><br>
+        </fieldset>
+        <br><br>
+    </form>
+    </body>
+</html>
