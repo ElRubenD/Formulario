@@ -1,0 +1,43 @@
+*{
+    font-size: medium;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 0px;
+    border-width: 2px;
+    border-color: rgb(244, 0, 252);
+}
+
+@font-face{
+    font-family: "opcion1";
+    src: url(./Fuentes/Bethania.ttf);
+}
+
+h1{
+    font-size: 8em;
+    font-weight: normal;
+    font-family: "opcion1";
+}
+
+input{
+    color: black;
+}
+
+.Boton{
+    color: black;
+}
+
+fieldset{
+    align-self: center;
+    width: 800px;
+    margin: auto;
+    /* para centrar el fieldset */
+}
+
+body{
+    background-image: url(./Imagenes/vector-colors-colorful-abstract-wallpaper-preview.jpg);
+    background-size: cover;
+    /* Cover para que cubra el 100% de la pantalla */
+    background-repeat: no-repeat;
+    /* no-repeat es para queno repita la imagen */
+}
